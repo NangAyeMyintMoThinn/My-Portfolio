@@ -1,0 +1,129 @@
+.contact-container{
+    width: 85%;
+    margin: 90px auto auto auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* LEFT SIDE */
+
+.contact-form{
+    flex: 2;
+}
+
+.contact-form h1{
+    font-size: 40px;
+    color: var(--darkblue);
+    margin-bottom: 15px;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 15px;
+
+    border: 2px solid #d6e8f7;
+    border-radius: 12px;
+
+    font-size: 16px;
+    font-family: inherit;
+
+    outline: none;
+
+    transition: .3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color: var(--skyblue);
+    box-shadow: 0 0 10px rgba(64,189,255,.2);
+}
+
+.contact-form textarea{
+    resize: none;
+}
+
+.contact-form button{
+    width: 180px;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: var(--darkblue);
+    color: white;
+
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.contact-form button:hover{
+    background: var(--skyblue);
+    color: var(--darkblue);
+}
+
+/* RIGHT SIDE */
+
+.contact-info{
+    flex: 1;
+}
+
+.contact-info h1{
+    font-size: 40px;
+    color: var(--darkblue);
+    margin-bottom: 35px;
+}
+
+.info-item{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.info-item i{
+    font-size: 28px;
+    width: 50px;
+}
+
+/* Official Brand Colors */
+
+.fa-envelope{
+    color: #EA4335;
+}
+
+.fa-telegram{
+    color: #229ED9;
+}
+
+.fa-github{
+    color: #181717;
+}
+
+.fa-facebook{
+    color: #1877F2;
+}
+
+.info-item h4{
+    color: var(--darkblue);
+    margin-bottom: 5px;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-item p{
+    color: #555;
+}

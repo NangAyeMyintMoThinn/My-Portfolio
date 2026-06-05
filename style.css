@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --skyblue : #40BDFF;
+    --darkblue : #0D47A1;
+    --container-background : #81d0fb;
+    --bg-color: #ffffff;
+    --text-color: #222222;
+    --card-color: #ffffff;
+}
+.dark-theme{
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --card-color: #1e1e1e;
+}
+.fa-html5{color:#E34F26;}
+
+.fa-css3-alt{color:#1572B6;}
+
+.fa-js{color:#F7DF1E;}
+
+.fa-react{color:#3e889c;}
+
+.fa-java{color:#F89820;}
+
+.fa-laravel{color:#FF2D20;}
+
+.fa-database{color:#336791;}
+
+.fa-code{color:#68217A;}
+
+/* Facebook */
+.facebook{
+    color: #1877F2;
+    border: 2px solid #1877F2;
+}
+
+.facebook:hover{
+    background: #1877F2;
+    color: white;
+}
+
+/* Telegram */
+.telegram{
+    color: #229ED9;
+    border: 2px solid #229ED9;
+}
+
+.telegram:hover{
+    background: #229ED9;
+    color: white;
+}
+
+/* Email */
+.email{
+    color: #EA4335;
+    border: 2px solid #EA4335;
+}
+
+.email:hover{
+    background: #EA4335;
+    color: white;
+}
+
+/* GitHub */
+.github{
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+.github:hover{
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+body{
+    font-family: "Poppins", sans-serif;
+    opacity: 1;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    transition: opacity 0.4s ease;
+}
+
+body.fade-out{
+    opacity: 0;
+}
+/* nav start  */
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px;
+    border-bottom: 2px solid var(--skyblue);
+    box-shadow: 2px 2px 3px gray;
+    background-color: var(--card-color);
+    z-index: 1000;
+}
+.nav .logo{
+    cursor: pointer;
+    font-size: 22px;
+    color: var(--skyblue);
+    font-weight: 700;
+}
+.logo a{
+    text-decoration: none;
+    color: var(--skyblue);
+}
+.nav .menus{
+    margin: 0 15px;
+    text-align: center  ;
+}
+.menus a{
+    display: inline-block;
+    color: var(--skyblue);
+    text-decoration: none;
+    margin: 0px 20px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.menus a:hover{
+    transform: scale(1.1);
+    font-weight: 500;
+}
+.nav button{
+    width: 100px;
+    background-color: var(--darkblue);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.nav button:hover{
+    color: var(--darkblue);
+    background-color: var(--skyblue);
+}
+
+.project-content h2,
+.title,
+.info h1{
+    color: var(--text-color);
+}

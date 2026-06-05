@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Myint Mo</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./contact.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <div class="nav">
+        <div class="logo">
+            <a href="./home.html">Myint Mo</a>
+        </div>
+
+        <div class="menus">
+            <a href="./home.html">Home</a>
+            <a href="./about.html">About Me</a>
+            <a href="./resume.html">Resume</a>
+            <a href="./works.html">Works</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+
+        <button class="themetoggle">Dark Mode</button>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-container animate__animated animate__fadeIn">
+
+        <!-- Left Side -->
+        <div class="contact-form animate__animated animate__fadeInLeft">
+
+            <h1 class="animate__animated animate__fadeInDown">Get In Touch</h1>
+
+            <form id="contactForm">
+
+                <input type="text" id="name" placeholder="Your Name" required>
+
+                <input type="email" id="email" placeholder="Your Email" required>
+
+                <textarea id="message" rows="8" placeholder="Write a Message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="contact-info animate__animated animate__fadeInRight">
+
+            <h1 class="animate__animated animate__fadeInDown">My Contact Details</h1>
+
+            <div class="info-item animate__animated animate__fadeInUp">
+                <i class="fa-solid fa-envelope"></i>
+
+                <div>
+                    <h4>Email</h4>
+                    <p>nangayemyintmothinn@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="info-item animate__animated animate__fadeInUp">
+                <i class="fa-brands fa-telegram"></i>
+
+                <div>
+                    <h4>Telegram</h4>
+                    <p>@nangayemyintmothinn</p>
+                </div>
+            </div>
+
+            <div class="info-item animate__animated animate__fadeInUp">
+                <i class="fa-brands fa-github"></i>
+
+                <div>
+                    <h4>GitHub</h4>
+                    <p>github.com/NangAyeMyintMoThinn</p>
+                </div>
+            </div>
+
+            <div class="info-item animate__animated animate__fadeInUp">
+                <i class="fa-brands fa-facebook"></i>
+
+                <div>
+                    <h4>Facebook</h4>
+                    <p>Your Facebook Profile</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="./contact.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>

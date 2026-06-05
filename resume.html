@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Myint Mo</title>
+    <link rel="stylesheet" href="./resume.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <a href="./home.html">Myint Mo</a>
+        </div>
+        <div class="menus">
+            <a href="./home.html" class="home">Home</a>
+            <a href="./about.html" class="aboutme">About Me</a>
+            <a href="./resume.html" class="resume">Resume</a>
+            <a href="./works.html" class="works">Works</a>
+            <a href="./contact.html" class="contact">Contact</a>
+        </div>
+        <button class="themetoggle">Dark Mode</button>
+    </div>
+<section class="resume-container animate__animated animate__fadeIn">
+
+    <div class="left-panel animate__animated animate__fadeInLeft">        
+        <h1 class="animate__animated animate__fadeInDown">Why Hire Me?</h1>
+        <p>
+            Passionate Computer Science student with experience in web
+            development, databases, software engineering, and IoT systems.
+        </p>
+
+        <button class="tab-btn active" onclick="showTab('skills',this)">
+            Skills
+        </button>
+
+        <button class="tab-btn" onclick="showTab('education',this)">
+            Education
+        </button>
+
+        <button class="tab-btn" onclick="showTab('experience',this)">
+            Experience
+        </button>
+    </div>
+
+    <div class="right-panel animate__animated animate__fadeInRight">
+
+        <!-- Skills -->
+        <div id="skills" class="tab-content active-content">
+
+            <h2>My Skills</h2>
+
+            <p>
+                Technologies and tools that I use to build web, desktop,
+                and database applications.
+            </p>
+
+            <div class="skills-grid">
+
+                <div class="skill-card animate__animated animate__zoomIn">
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML</span>
+                </div>
+
+                <div class="skill-card animate__animated animate__zoomIn">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span>CSS</span>
+                </div>
+
+                <div class="skill-card animate__animated animate__zoomIn">
+                    <i class="fa-brands fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="skill-card animate__animated animate__zoomIn">
+                    <i class="fa-brands fa-react"></i>
+                    <span>React</span>
+                </div>
+
+                <div class="skill-card animate__animated animate__zoomIn">
+                    <i class="fa-brands fa-java"></i>
+                    <span>Java</span>
+                </div>
+
+                <div class="skill-card animate__animated animate__zoomIn">
+                    <i class="fa-solid fa-database"></i>
+                    <span>SQL</span>
+                </div>
+
+                <div class="skill-card animate__animated animate__zoomIn">
+                    <i class="fa-brands fa-laravel"></i>
+                    <span>Laravel</span>
+                </div>
+
+                <div class="skill-card animate__animated animate__zoomIn">
+                    <i class="fa-solid fa-code"></i>
+                    <span>C#</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Education -->
+        <div id="education" class="tab-content">
+
+            <h2>Education</h2>
+
+            <div class="info-card animate__animated animate__fadeIn">
+                <h3>Bachelor of Computer Science</h3>
+                <p>University of Computer Studies</p>
+                <small>2022 - Present</small>
+            </div>
+
+        </div>
+
+        <!-- Experience -->
+        <div id="experience" class="tab-content">
+
+            <h2>Experience</h2>
+
+            <div class="info-card animate__animated animate__fadeIn">
+                <h3>Frontend Developer Volunteer</h3>
+                <p>The Blossoms Free Organization</p>
+                <small>Volunteer Experience</small>
+            </div>
+
+            <div class="info-card animate__animated animate__fadeIn">
+                <h3>Software Development Team Member</h3>
+                <p>University Academic Projects</p>
+                <small>
+                    Collaborated with team members using GitHub, Java, C#,
+                    databases, and Agile development practices.
+                </small>
+            </div>
+
+            <div class="info-card animate__animated animate__fadeIn">
+                <h3>Independent Software Developer</h3>
+                <p>Personal Projects & Self-Learning</p>
+                <small>
+                    Designed and developed web, desktop, database, and IoT
+                    applications independently.
+                </small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="./resume.js"></script>
+<script src="./main.js"></script>
+
+</body>
+</html>
