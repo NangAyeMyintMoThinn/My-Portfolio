@@ -32,7 +32,18 @@
 .fa-database{color:#336791;}
 
 .fa-code{color:#68217A;}
+.dark-theme .fa-github{
+    color: white;
+}
+.dark-theme .github{
+    color: white;
+    border: 2px solid white;
+}
 
+.dark-theme .github:hover{
+    background: white;
+    color: #181717;
+}
 /* Facebook */
 .facebook{
     color: #1877F2;
