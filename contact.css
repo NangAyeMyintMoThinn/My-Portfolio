@@ -29,6 +29,7 @@
 .contact-form textarea{
     width: 100%;
     padding: 15px;
+    box-sizing: border-box;
 
     border: 2px solid #d6e8f7;
     border-radius: 12px;
@@ -126,4 +127,95 @@
 
 .info-item p{
     color: #555;
+}
+
+/* TABLET DEVICES */
+@media screen and (max-width: 992px){
+
+    .contact-container{
+        width: 90%;
+        gap: 40px;
+    }
+
+    .contact-form h1,
+    .contact-info h1{
+        font-size: 32px;
+    }
+}
+
+
+/* MOBILE DEVICES */
+@media screen and (max-width: 768px){
+
+    .contact-container{
+        width: 90%;
+        margin-top: 100px;
+
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .contact-form,
+    .contact-info{
+        width: 100%;
+    }
+
+    .contact-form h1,
+    .contact-info h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .contact-form button{
+        width: 100%;
+    }
+
+    .info-item{
+        justify-content: flex-start;
+    }
+}
+
+
+/* SMALL PHONES */
+@media screen and (max-width: 480px){
+
+    .contact-container{
+        width: 95%;
+        margin-top: 90px;
+    }
+
+    .contact-form h1,
+    .contact-info h1{
+        font-size: 24px;
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .contact-form button{
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .info-item{
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .info-item i{
+        font-size: 22px;
+        width: 35px;
+    }
+
+    .info-item h4{
+        font-size: 14px;
+    }
+
+    .info-item p{
+        font-size: 13px;
+        word-break: break-word;
+    }
 }

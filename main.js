@@ -39,6 +39,12 @@ themeBtn.addEventListener("click", () => {
         themeBtn.textContent = "Dark Mode";
     }
 });
+const menuToggle = document.querySelector(".menu-toggle");
+const menus = document.querySelector(".menus");
+
+menuToggle.addEventListener("click", () => {
+    menus.classList.toggle("active");
+});
 // function showPage(pageId) {
 
 //     document.querySelectorAll("section")
