@@ -7,7 +7,6 @@
 /* :root{
     --skyblue : #40BDFF;
     --darkblue : #0D47A1;
-    --container-background : #81d0fb;
     --bg-color: #ffffff;
     --text-color: #222222;
     --card-color: #ffffff;
@@ -20,6 +19,7 @@
  :root{
     --skyblue: #40BDFF;
     --darkblue: #0D47A1;
+    --container-background : #81d0fb;
 
     --bg-color: #ffffff;
     --text-color: #222222;
