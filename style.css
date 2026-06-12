@@ -39,7 +39,7 @@
     --secondary-text: #cfcfcf;
     --divider-color: rgba(255,255,255,0.15);
 
-    --shadow-color: rgba(255,255,255,0.05);
+    --shadow-color: rgba(0,0,0,0.5);;
 }
 .fa-html5{color:#E34F26;}
 
