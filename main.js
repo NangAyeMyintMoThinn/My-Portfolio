@@ -45,6 +45,13 @@ const menus = document.querySelector(".menus");
 menuToggle.addEventListener("click", () => {
     menus.classList.toggle("active");
 });
+const menuLinks = document.querySelectorAll(".menus a");
+
+menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        menus.classList.remove("active");
+    });
+});
 // function showPage(pageId) {
 
 //     document.querySelectorAll("section")
