@@ -103,6 +103,25 @@
 .dark-theme .contact-info .fa-github{
     color: white;
 }
+/* LinkedIn */
+.linkedin {
+    color: #0A66C2;
+    border: 2px solid #0A66C2;
+}
+
+.linkedin:hover {
+    background: #0A66C2;
+    color: white;
+}
+.dark-theme .linkedin {
+    color: #4da3ff;
+    border: 2px solid #4da3ff;
+}
+
+.dark-theme .linkedin:hover {
+    background: #4da3ff;
+    color: #121212;
+}
 body{
     font-family: "Poppins", sans-serif;
     opacity: 1;

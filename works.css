@@ -2,7 +2,7 @@
 
 .works-container{
     width: 85%;
-    margin: 120px auto 80px;
+    margin: 90px auto 80px;
 }
 
 .project-card{
@@ -12,9 +12,9 @@
     align-items: center;
     justify-content: space-between;
 
-    gap: 80px;
+    gap: 50px;
 
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 
     opacity: 0;
     visibility: hidden;
@@ -37,7 +37,7 @@
 .project-number{
     display: block;
 
-    font-size: 110px;
+    font-size: 85px;
     font-weight: 800;
 
     color: transparent;
@@ -46,9 +46,7 @@
 
     line-height: 1;
 }
-
 .project-content h2{
-    font-size: 48px;
     font-weight: 700;
 
     color: var(--text-color);
@@ -70,13 +68,13 @@
 /* TECH STACK */
 
 .tech-stack{
-    margin-top: 25px;
+    margin: 10px auto;
 
     color: var(--skyblue);
 
-    font-weight: 600;
+    font-weight: 500;
 
-    font-size: 15px;
+    font-size: 16px;
 }
 
 /* DIVIDER */
@@ -98,8 +96,8 @@
 }
 
 .project-links a{
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
 
     display: flex;
     align-items: center;
@@ -114,7 +112,7 @@
 
     box-shadow: 0 5px 15px var(--shadow-color);
 
-    font-size: 22px;
+    font-size: 28px;
 
     transition: .3s;
 }
@@ -132,36 +130,103 @@
 
 /* IMAGE SIDE */
 
-.project-image{
-    flex: 1;
-
+.project-image-gallery{
+    max-width: 50%;
     display: flex;
-    justify-content: center;
+    gap: 15px;
+    overflow-x: auto;
+    /* overflow-y: hidden; */
+    padding: 5px;
+    scroll-behavior: smooth;
 }
 
-.project-image img{
+.project-image-gallery img{
+    width: 350px;
+    height: 240px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+    
+    transition: 0.3s ease;
+}
+
+.project-image-gallery img:hover{
+    transform: scale(1.03);
+}
+.project-image-gallery::-webkit-scrollbar{
+    height: 8px;
+}
+
+.project-image-gallery::-webkit-scrollbar-track{
+    background: var(--card-color);
+    border-radius: 10px;
+}
+
+.project-image-gallery::-webkit-scrollbar-thumb{
+    background: var(--skyblue);
+    border-radius: 10px;
+}
+
+.project-image-gallery::-webkit-scrollbar-thumb:hover{
+    background: var(--darkblue);
+}
+.image-modal{
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
     width: 100%;
-    max-width: 650px;
+    height: 100%;
+
+    background: rgba(0,0,0,0.9);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+.image-modal img{
+    max-width: 90%;
+    max-height: 90%;
 
     border-radius: 15px;
 
-    box-shadow: 0 15px 35px rgba(0,0,0,.18);
-
-    transition: .4s;
+    animation: zoomIn .3s ease;
 }
 
-.project-image img:hover{
-    transform: scale(1.03);
-}
-.image-zoom img{
-    transition:
-        transform .5s ease,
-        box-shadow .5s ease;
+.close-modal{
+    position: absolute;
+
+    top: 20px;
+    right: 35px;
+
+    color: white;
+
+    font-size: 40px;
+
+    cursor: pointer;
 }
 
-.image-zoom img:hover{
-    transform: scale(1.05);
+@keyframes zoomIn{
+    from{
+        transform: scale(.8);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
+
 /* RESPONSIBILITIES */
 
 .responsibilities{
@@ -256,7 +321,7 @@
         font-size: 36px;
     }
 
-    .project-image img{
+    .project-image-gallery img{
         max-width: 100%;
     }
 }
@@ -357,7 +422,7 @@
         font-size: 18px;
     }
 
-    .project-image img{
+    .project-image-gallery img{
         border-radius: 10px;
     }
 
